@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(/public/fonts/Roboto-Regular.ttf) format('woff2');
+}
+
+body {
+    width: 1450px;
+    background: #EFF1F5;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.37px;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.todo_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #0000001A;
+}
+.todo_list form, .todo_list div{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.todo_list_header, .todo_list {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.empty {
+    border: 1px solid red;
+}
+
+.red {
+    color: red;
+}
+
+.container {
+    width: 1197px;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #0000001A;
+}
+
+.header form {
+    width: 50%;
+    border: 1px solid #0000001A;
+    padding-bottom: 10px;
+}
+
+.header_title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.header_title_label label {
+    width: 100px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.header_title_label input {
+    margin: 0;
+}
+
+.header_title_submit {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.todo_list_header div {
+    padding-top: 10px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+.delete_background {
+    background-image: url('/public/images/delete_ico.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-position: center;
+}
+
+.search_title_label {
+
+}
+
+.search_input {
+    width: 200px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.search_title_submit {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.search_title_submit a {
+    display: block;
+    margin: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination ul {
+    list-style: none;
+}
+.pagination li{
+    width: 20px;
+    text-align: center;
+    border: 1px solid #00B0FF;
+    margin: auto 5px;
+}
+.pagination li>a{
+    text-decoration: none;
+}
+.pagination li:first-child, .pagination li:last-child{
+    border: none;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.pagination li.active{
+    background-color: #00B0FF;
+    color: white;
+}
